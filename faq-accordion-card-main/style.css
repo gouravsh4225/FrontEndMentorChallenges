@@ -1,0 +1,110 @@
+:root {
+  --dark-blue: hsl(238, 29%, 16%);
+  --soft-violet-bg: hsl(273, 75%, 66%);
+  --soft-blue-bg: hsl(240, 73%, 65%);
+  --light-divider-blue: hsl(240, 5%, 91%);
+  --Verydarkgrayishblue: hsl(237, 12%, 33%);
+  --white: hsl(0, 0%, 100%);
+  --font_family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--soft-blue-bg);
+  font-family: var(--font_family);
+}
+
+.fag__wrapper {
+  position: relative;
+}
+.card {
+  display: grid;
+  grid-gap: 1rem;
+  background-color: var(--white);
+  border-radius: 0.8rem;
+  grid-template-columns: 400px 1fr;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  height: 509px;
+  width: 920px;
+  background-position: 1260% 57%;
+  align-items: center;
+}
+
+.image__wrapper {
+  height: 100%;
+  width: 100%;
+}
+.image__inner-wrapper {
+  background-image: url("./images/illustration-woman-online-desktop.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 120% center;
+}
+
+.box {
+  position: absolute;
+  top: 47%;
+  left: -10%;
+}
+.accordion__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  max-width: 350px;
+}
+.accordion__wrapper .accordion__title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.question-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.question-item {
+  color: var(--Verydarkgrayishblue);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--light-divider-blue);
+}
+.question-item .question-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.question-header img {
+  align-self: center;
+}
+.question-header .question-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.answer-box {
+  line-height: 1.5;
+  font-size: 1rem;
+}
